@@ -1,0 +1,24 @@
+Package: qgarch
+Type: Package
+Title: Quadratic GARCH-in-Mean Models for Volatility Feedback
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Sanghyun", family = "Hong",
+           email = "sanghyun.hong@canterbury.ac.nz",
+           role = c("aut", "cre"))
+    )
+Description: Fits QGARCH-in-mean models motivated by Campbell and Hentschel
+    (1992) and the supplied replication scripts. The package implements the
+    QGARCH-M(1,1) specification with four variants: lambda fixed at zero,
+    lambda restricted to a function of the other parameters, lambda estimated
+    freely, and a threshold extension with lambda varying by an indicator.
+    The Markov-switching extension is intentionally omitted.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.3.2
+Imports:
+    MASS
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
