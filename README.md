@@ -13,7 +13,7 @@ In the Campbell and Hentschel model, expected returns vary with
 conditional variance, and stock returns include a volatility-feedback
 term that helps capture asymmetric return dynamics. The framework is
 designed to accommodate features such as predictive asymmetry, negative
-skewness, and excess kurtosis in stock returns. See John Y. Campbell, Ludger Hentschel (1992).
+skewness, and excess kurtosis in stock returns. See, John Y. Campbell, Ludger Hentschel (1992).
 "No news is good news: An asymmetric model of changing volatility in stock returns."
 Journal of Financial Economics, Volume 31, Issue 3, 281-318.
 https://doi.org/10.1016/0304-405X(92)90037-X. 
