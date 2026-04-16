@@ -2,7 +2,12 @@
 
 `qgarch` is an R package for estimating and working with quadratic
 GARCH-in-mean models in the Campbell and Hentschel (1992)
-volatility-feedback framework.
+volatility-feedback framework. 
+
+We replicated and extended the original paper in: 
+Jedrzej Bialkowski, Sanghyun Hong and Moritz Wagner (2025).
+"Is no news still good news? Volatility feedback revisited." Pacific-Basin Finance Journal, Volume 91.
+https://doi.org/10.1016/j.pacfin.2025.102708.
 
 In the Campbell and Hentschel model, expected returns vary with
 conditional variance, and stock returns include a volatility-feedback
