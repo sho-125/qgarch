@@ -7,12 +7,12 @@
 \method{summary}{qgarch}(object, ...)
 }
 \arguments{
-\item{object}{A fitted `qgarch` object.}
+\item{object}{A fitted \code{qgarch} object.}
 
 \item{...}{Unused.}
 }
 \value{
-An object of class `"summary.qgarch"`.
+An object of class \code{"summary.qgarch"}.
 }
 \description{
 Summarize a qgarch model

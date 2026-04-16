@@ -7,11 +7,11 @@
 \method{plot}{qgarch}(x, which = c("sigma2", "standardized"), ...)
 }
 \arguments{
-\item{x}{A fitted `qgarch` object.}
+\item{x}{A fitted \code{qgarch} object.}
 
-\item{which}{Which plot to show: `"sigma2"` or `"standardized"`.}
+\item{which}{Which plot to show: \code{"sigma2"} or \code{"standardized"}.}
 
-\item{...}{Additional graphical arguments passed to [graphics::plot()].}
+\item{...}{Additional graphical arguments passed to \code{\link[graphics:plot.default]{graphics::plot()}}.}
 }
 \value{
 The input object, invisibly.

@@ -7,10 +7,10 @@
 \method{coef}{qgarch}(object, ...)
 }
 \arguments{
-\item{object}{A fitted `qgarch` object.}
+\item{object}{A fitted \code{qgarch} object.}
 
-\item{...}{Additional arguments. Supports `type = "estimated"` or
-`type = "full"`.}
+\item{...}{Additional arguments. Supports \code{type = "estimated"} or
+\code{type = "full"}.}
 }
 \value{
 A named numeric vector of coefficients.

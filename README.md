@@ -1,45 +1,96 @@
 # qgarch
 
-`qgarch` is a small R package for the QGARCH-in-mean model family used in the
-Campbell and Hentschel (1992) volatility-feedback framework and in the
-replication scripts you supplied.
+`qgarch` is an R package for estimating and working with quadratic
+GARCH-in-mean models in the Campbell and Hentschel (1992)
+volatility-feedback framework.
 
-## Implemented models
+In the Campbell and Hentschel model, expected returns vary with
+conditional variance, and stock returns include a volatility-feedback
+term that helps capture asymmetric return dynamics. The framework is
+designed to accommodate features such as predictive asymmetry, negative
+skewness, and excess kurtosis in stock returns.
 
-- `model = "zero"`: QGARCH-M(1,1) with `lambda = 0`
-- `model = "restricted"`: `lambda = rho * gamma * alpha / (1 - rho * (alpha + beta))`
-- `model = "free"`: `lambda` estimated freely
-- `model = "threshold"`: `lambda_t = lambda1 + lambda2 * I_t`
+## What the package does
 
-The package intentionally **does not** include the Markov-switching extension.
+`qgarch` provides tools to:
+
+- fit generalized QGARCH-in-mean models with nonlinear maximum likelihood,
+- work with several model specifications through a common interface,
+- extract coefficients, fitted values, residuals, variance-covariance matrices,
+  and log-likelihood values,
+- generate forecasts of the conditional mean and conditional variance,
+- compute moment diagnostics, and
+- compare nested specifications with likelihood-ratio tests.
+
+The main estimation function is `qgarch_fit()`. It supports four model
+specifications:
+
+- `model = "zero"`: sets `lambda = 0`,
+- `model = "restricted"`: links `lambda` to the remaining parameters through
+  the restricted mapping,
+- `model = "free"`: estimates `lambda` freely, and
+- `model = "threshold"`: allows a state-dependent `lambda_t`.
 
 ## Installation
 
-From the package source directory:
+You can install the development version of `qgarch` directly from GitHub:
 
 ```r
-install.packages("qgarch_0.1.0.tar.gz", repos = NULL, type = "source")
-```
-
-## Minimal example
-
-```r
+install.packages("remotes")
+remotes::install_github("sho-125/qgarch")
 library(qgarch)
-set.seed(123)
-x <- rnorm(300, sd = 0.04)
-
-fit <- qgarch_fit(x, model = "free")
-print(fit)
-summary(fit)
-plot(fit)
-predict(fit, n.ahead = 5)
 ```
 
-## Notes
+## Example
 
-- The replication scripts use data-specific starting values. To make the package
-  more convenient, `qgarch_fit()` tries several default starting vectors and
-  keeps the best converged solution.
-- The restricted-lambda model uses `rho = 1` by default so that the package
-  matches the supplied replication code. You can override this with the `rho`
-  argument.
+The example below installs the package from GitHub, loads the bundled
+monthly U.S. dataset, fits a QGARCH(1,1) model with freely estimated
+volatility-feedback parameter `lambda`, and then plots the fitted
+conditional variance and standardized residuals.
+
+```r
+# Install from GitHub
+install.packages("remotes")
+remotes::install_github("sho-125/qgarch")
+
+# Load package
+library(qgarch)
+
+# Load bundled example data
+data("us_monthly", package = "qgarch")
+
+# Extract excess returns
+x <- us_monthly$ER
+
+# Fit a QGARCH(1,1) model
+fit11 <- qgarch_fit(
+  x,
+  model = "free",
+  arch_order = 1L,
+  garch_order = 1L
+)
+
+# Review estimation results
+print(fit11)
+summary(fit11)
+coef(fit11)
+logLik(fit11)
+
+# Plot fitted conditional variance
+plot(fit11, which = "sigma2")
+
+# Plot standardized residuals
+plot(fit11, which = "standardized")
+```
+
+
+
+
+
+
+
+
+
+
+
+

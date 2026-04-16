@@ -3,22 +3,40 @@ Type: Package
 Title: Quadratic GARCH-in-Mean Models for Volatility Feedback
 Version: 0.1.0
 Authors@R: c(
-    person(given = "Sanghyun", family = "Hong",
-           email = "sanghyun.hong@canterbury.ac.nz",
-           role = c("aut", "cre"))
+    person(
+        given = "Sanghyun",
+        family = "Hong",
+        email = "sanghyun.hong@canterbury.ac.nz",
+        role = c("aut", "cre")
+    ),
+    person(
+        given = "Moritz",
+        family = "Wagner",
+        email = "moritz.wagner@canterbury.ac.nz",
+        role = "aut"
     )
-Description: Fits QGARCH-in-mean models motivated by Campbell and Hentschel
-    (1992) and the supplied replication scripts. The package implements the
-    QGARCH-M(1,1) specification with four variants: lambda fixed at zero,
-    lambda restricted to a function of the other parameters, lambda estimated
-    freely, and a threshold extension with lambda varying by an indicator.
-    The Markov-switching extension is intentionally omitted.
+  )
+Description: Fits quadratic generalized autoregressive conditional
+    heteroskedasticity-in-mean (QGARCH-M) models motivated by Campbell and
+    Hentschel (1992). The package supports models with lambda fixed at zero,
+    lambda restricted to a function of the remaining parameters, lambda
+    estimated freely, and a threshold extension with state-dependent lambda.
+    It also provides tools for starting values, estimation, forecasting,
+    likelihood-ratio testing, moment diagnostics, and replication with the
+    included monthly U.S. stock market dataset.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: false
-RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
 Imports:
     MASS
 Suggests:
     testthat (>= 3.0.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+LazyData: true
+URL: https://github.com/sho-125/qgarch
+BugReports: https://github.com/sho-125/qgarch/issues
 Config/testthat/edition: 3
+
+

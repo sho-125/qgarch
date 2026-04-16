@@ -7,7 +7,7 @@
 \method{fitted}{qgarch}(object, ...)
 }
 \arguments{
-\item{object}{A fitted `qgarch` object.}
+\item{object}{A fitted \code{qgarch} object.}
 
 \item{...}{Unused.}
 }
