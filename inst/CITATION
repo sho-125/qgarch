@@ -1,0 +1,41 @@
+citHeader("To cite qgarch, please cite the paper and the package:")
+
+bibentry(
+  bibtype = "Article",
+  title = "Is no news still good news? Volatility feedback revisited",
+  author = c(
+    person("Jedrzej", "Bialkowski"),
+    person("Sanghyun", "Hong"),
+    person("Moritz", "Wagner")
+  ),
+  year = "2025",
+  journal = "Pacific-Basin Finance Journal",
+  volume = "91",
+  pages = "102708",
+  doi = "10.1016/j.pacfin.2025.102708",
+  textVersion = paste(
+    "Bialkowski J, Hong S, Wagner M (2025).",
+    "\"Is no news still good news? Volatility feedback revisited.\"",
+    "Pacific-Basin Finance Journal, 91, 102708.",
+    "doi:10.1016/j.pacfin.2025.102708."
+  )
+)
+
+bibentry(
+  bibtype = "Manual",
+  title = "qgarch: Quadratic GARCH-in-Mean Models for Volatility Feedback",
+  author = c(
+    person("Jedrzej", "Bialkowski"),
+    person("Sanghyun", "Hong"),
+    person("Moritz", "Wagner")
+  ),
+  year = "2026",
+  note = "R package version 0.1.0",
+  url = "https://github.com/sho-125/qgarch",
+  textVersion = paste(
+    "Bialkowski J, Hong S, Wagner M (2026).",
+    "qgarch: Quadratic GARCH-in-Mean Models for Volatility Feedback.",
+    "R package version 0.1.0.",
+    "https://github.com/sho-125/qgarch."
+  )
+)

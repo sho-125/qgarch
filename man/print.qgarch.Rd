@@ -7,7 +7,7 @@
 \method{print}{qgarch}(x, digits = max(3L, getOption("digits") - 2L), ...)
 }
 \arguments{
-\item{x}{A fitted `qgarch` object.}
+\item{x}{A fitted \code{qgarch} object.}
 
 \item{digits}{Number of digits to print.}
 

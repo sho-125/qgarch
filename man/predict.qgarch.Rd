@@ -2,12 +2,12 @@
 % Please edit documentation in R/methods.R
 \name{predict.qgarch}
 \alias{predict.qgarch}
-\title{Forecast from a qgarch model}
+\title{Forecast from a generalized qgarch(m, n) model}
 \usage{
 \method{predict}{qgarch}(object, n.ahead = 1L, ...)
 }
 \arguments{
-\item{object}{A fitted `qgarch` object.}
+\item{object}{A fitted \code{qgarch} object.}
 
 \item{n.ahead}{Number of periods ahead to forecast.}
 
@@ -15,8 +15,8 @@
 }
 \value{
 A data frame with forecast horizon, conditional mean,
-  conditional variance, and conditional standard deviation.
+conditional variance, and conditional standard deviation.
 }
 \description{
-Forecast from a qgarch model
+Forecast from a generalized qgarch(m, n) model
 }

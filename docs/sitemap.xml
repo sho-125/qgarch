@@ -1,0 +1,23 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/reference/coef.qgarch.html</loc></url>
+<url><loc>/reference/fitted.qgarch.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/logLik.qgarch.html</loc></url>
+<url><loc>/reference/plot.qgarch.html</loc></url>
+<url><loc>/reference/predict.qgarch.html</loc></url>
+<url><loc>/reference/print.qgarch.html</loc></url>
+<url><loc>/reference/print.summary.qgarch.html</loc></url>
+<url><loc>/reference/qgarch_default_starts.html</loc></url>
+<url><loc>/reference/qgarch_fit.html</loc></url>
+<url><loc>/reference/qgarch_lr_test.html</loc></url>
+<url><loc>/reference/qgarch_moments.html</loc></url>
+<url><loc>/reference/residuals.qgarch.html</loc></url>
+<url><loc>/reference/summary.qgarch.html</loc></url>
+<url><loc>/reference/vcov.qgarch.html</loc></url>
+</urlset>
+

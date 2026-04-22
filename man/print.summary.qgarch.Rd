@@ -7,7 +7,7 @@
 \method{print}{summary.qgarch}(x, digits = max(3L, getOption("digits") - 2L), ...)
 }
 \arguments{
-\item{x}{An object of class `"summary.qgarch"`.}
+\item{x}{An object of class \code{"summary.qgarch"}.}
 
 \item{digits}{Number of digits to print.}
 

@@ -7,10 +7,10 @@
 \method{residuals}{qgarch}(object, type = c("raw", "standardized", "eta"), ...)
 }
 \arguments{
-\item{object}{A fitted `qgarch` object.}
+\item{object}{A fitted \code{qgarch} object.}
 
-\item{type}{Type of residuals to return: `"raw"`, `"standardized"`,
-or `"eta"`.}
+\item{type}{Type of residuals to return: \code{"raw"}, \code{"standardized"},
+or \code{"eta"}.}
 
 \item{...}{Unused.}
 }

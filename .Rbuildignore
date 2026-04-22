@@ -1,3 +1,6 @@
 ^.*\.Rproj$
-^\.git$
 ^\.Rproj\.user$
+^\.git$
+^\.gitignore$
+^\.Rhistory$
+^data-raw$
