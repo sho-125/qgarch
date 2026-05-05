@@ -89,15 +89,3 @@ plot(fit11, which = "sigma2")
 
 # Plot standardized residuals
 plot(fit11, which = "standardized")
-
-
-
-
-
-
-
-
-
-
-
-
