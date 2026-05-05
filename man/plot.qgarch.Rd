@@ -11,7 +11,7 @@
 
 \item{which}{Which plot to show: \code{"sigma2"} or \code{"standardized"}.}
 
-\item{...}{Additional graphical arguments passed to \code{\link[graphics:plot.default]{graphics::plot()}}.}
+\item{...}{Additional graphical arguments passed to \code{\link[graphics:plot]{graphics::plot()}}.}
 }
 \value{
 The input object, invisibly.

@@ -5,3 +5,6 @@
 ^\.Rhistory$
 ^data-raw$
 ^cran-comments\.md$
+^LICENSE\.md$
+^docs$
+^CRAN-SUBMISSION$

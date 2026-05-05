@@ -39,10 +39,8 @@ Imports:
 Suggests:
     testthat (>= 3.0.0)
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 LazyData: true
 URL: https://github.com/sho-125/qgarch
 BugReports: https://github.com/sho-125/qgarch/issues
 Config/testthat/edition: 3
-
-
+Config/roxygen2/version: 8.0.0
